@@ -1,0 +1,24 @@
+{
+  "name": "Vimbanery",
+  "version": "0.1",
+  "description": "Vim-like keybindings for Kanbanery",
+
+  "content_scripts": [{
+    "matches": [
+      "https://*.kanbanery.com/projects/*/board",
+      "http://smackaho.st/projects/*/board"
+    ],
+
+    "js": [
+      "js/keycodes.js",
+      "js/proxy.js",
+      "js/key-sequence-handler.js",
+      "js/vimbanery.js",
+      "js/content.js"
+    ],
+
+    "css": [
+      "css/vimbanery.css"
+    ]
+  }]
+}
